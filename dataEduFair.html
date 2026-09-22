@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Booth Edufair</title>
+</head>
+
+<body>
+
+    <h1>Pendaftaran Booth Edufair 2026</h1>
+
+    <p>
+        Formulir pendaftaran berikut ini untuk universitas yang ingin datang pada acara Edufair Kolese Kanisius 2027.
+    </p>
+
+    <hr>
+
+    <h2>Formulir Pendaftaran Booth</h2>
+
+    <form>
+
+        <label for="namaUniversitas">Nama Universitas:</label>
+        <br>
+        <input type="text" id="namaUniversitas" name="namaUniversitas" required>
+        <br><br>
+
+        <label for="password">Kata Sandi Akun:</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label for="email">Email Kontak:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <br>
+        <input type="number" id="telepon" name="telepon" required>
+        <br><br>
+
+        <label for="tanggal">Tanggal Universitas Dibuat:</label>
+        <br>
+        <input type="date" id="tanggal" name="tanggal" required>
+        <br><br>
+
+        <label>Jenis Booth:</label>
+        <br>
+
+        <input type="radio" id="singkat" name="jenisBooth" value="singkat" required>
+        <label for="singkat">Booth singkat (1 hari)</label>
+
+        <br>
+
+        <input type="radio" id="penuh" name="jenisBooth" value="penuh">
+        <label for="penuh">Booth penuh (2 hari)</label>
+
+        <br>
+
+        <input type="radio" id="tambahan" name="jenisBooth" value="tambahan">
+        <label for="tambahan">Booth tambahan (2 hari dan 2 booth)</label>
+
+        <br><br>
+
+        <label>Tambahan Fasilitas Booth:</label>
+        <br>
+
+        <input type="checkbox" id="meja" name="fasilitas" value="meja">
+        <label for="meja">Meja Tambahan</label>
+
+        <br>
+
+        <input type="checkbox" id="kursi" name="fasilitas" value="kursi">
+        <label for="kursi">Kursi Tambahan</label>
+
+        <br>
+
+        <input type="checkbox" id="bannerIklan" name="fasilitas" value="bannerIklan">
+        <label for="bannerIklan">Tambahan Banner Iklan</label>
+
+        <br><br>
+
+        <label for="provinsi">Lokasi Universitas:</label>
+        <br>
+
+        <select id="provinsi" name="provinsi" required>
+            <option value="" selected disabled>Pilih Provinsi</option>
+            <option value="DKI Jakarta">DKI Jakarta</option>
+            <option value="Jawa Barat">Jawa Barat</option>
+            <option value="Jawa Tengah">Jawa Tengah</option>
+            <option value="Jawa Timur">Jawa Timur</option>
+            <option value="Banten">Banten</option>
+            <option value="DIY">DIY</option>
+        </select>
+
+        <br><br>
+
+        <label for="informasi">Informasi Booth:</label>
+        <br>
+
+        <textarea
+            id="informasi"
+            name="informasi"
+            rows="5"
+            cols="40"
+            placeholder="Tuliskan informasi tentang universitas"
+        ></textarea>
+
+        <br><br>
+
+        <label for="fileBrosur">Unggah Brosur Universitas:</label>
+        <br>
+
+        <input
+            type="file"
+            id="fileBrosur"
+            name="fileBrosur"
+            required
+        >
+
+        <br><br>
+
+        <input type="reset" value="Hapus Progress">
+        <input type="submit" value="Kirim Pendaftaran">
+
+    </form>
+
+    <hr>
+
+    <h2>Data Pendaftaran Booth Universitas</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+
+        <tr>
+            <th rowspan="2">No.</th>
+            <th rowspan="2">Nama Universitas</th>
+            <th rowspan="2">Jenis Booth</th>
+            <th colspan="2">Kontak</th>
+            <th rowspan="2">Provinsi</th>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <th>No. HP</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Universitas Indonesia</td>
+            <td>Booth Penuh</td>
+            <td><a href="https://webui.me" target="_blank">https://webui.me</a></td>
+            <td>081234567890</td>
+            <td rowspan="2">Jawa Barat</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Institut Teknologi Bandung</td>
+            <td>Booth Penuh</td>
+            <td><a href="https://itb.ac.id" target="_blank">https://itb.ac.id</a>h</td>
+            <td>081298765432</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>Universitas Gadjah Mada</td>
+            <td>Booth Singkat</td>
+            <td><a href="https://ugm.ac.id" target="_blank">https://ugm.ac.id</a>h</td>
+            <td>082112345678</td>
+            <td>DI Yogyakarta</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
